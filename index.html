@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>When Two Fires Meet: AOC, Trump, and the Politics of Power</title>
+<meta content="A ten-scene visual essay about BaZi, political disruption, and the demands of governing." name="description"/>
+<meta content="article" property="og:type"/>
+<meta content="When Two Fires Meet: AOC, Trump, and the Politics of Power" property="og:title"/>
+<meta content="Two political forces. One ancient Chinese symbolic system. A ten-scene visual story." property="og:description"/>
+<meta content="https://xyang-bit.github.io/When_Two_Fires_Meet_Storyboard/preview.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card">
+<style>
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            margin: 0;
+            background: #0d1523;
+            color: #f1f2f6;
+            font-family: system-ui, -apple-system, Segoe UI, sans-serif
+        }
+
+        a {
+            color: #e9bd79
+        }
+
+        .wrap {
+            max-width: 1120px;
+            margin: auto;
+            padding: 0 22px
+        }
+
+        .hero {
+            padding: 88px 0 65px;
+            background: radial-gradient(ellipse at 75% 0%, #713b30 0%, #1a263a 47%, #0d1523 100%);
+            border-bottom: 1px solid #344357
+        }
+
+        .eyebrow {
+            font-size: 12px;
+            font-weight: 750;
+            letter-spacing: .2em;
+            color: #efbd69;
+            text-transform: uppercase
+        }
+
+        .hero h1 {
+            font: 500 clamp(43px, 7vw, 90px)/1.04 Georgia, serif;
+            max-width: 950px;
+            margin: 20px 0 25px
+        }
+
+        .dek {
+            font: italic clamp(19px, 2.5vw, 25px)/1.55 Georgia, serif;
+            color: #c5cdd9;
+            max-width: 800px
+        }
+
+        .meta {
+            color: #a7b5c8;
+            font-size: 13px;
+            margin-top: 26px
+        }
+
+        .introline {
+            padding: 30px 0;
+            color: #d9dfeb;
+            font: 19px/1.8 Georgia, serif;
+            max-width: 800px
+        }
+
+        .scene {
+            display: grid;
+            grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+            margin: 36px 0 64px;
+            background: #182436;
+            border: 1px solid #33445b;
+            border-radius: 14px;
+            overflow: hidden
+        }
+
+        .visual {
+            min-height: 480px;
+            background: #25334a;
+            position: relative
+        }
+
+        .visual img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            position: absolute;
+            inset: 0
+        }
+
+        .visual .fallback {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 36px;
+            text-align: center;
+            background: linear-gradient(130deg, #432e33, #233a52);
+            font: italic 30px Georgia, serif;
+            color: #e9c38d
+        }
+
+        .copy {
+            padding: clamp(25px, 4vw, 48px)
+        }
+
+        .num {
+            color: #edbf79;
+            font-weight: 750;
+            letter-spacing: .16em;
+            font-size: 12px
+        }
+
+        .kicker {
+            color: #9fb2cc;
+            font-size: 11px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            margin: 9px 0 17px
+        }
+
+        .copy h2 {
+            font: 500 clamp(29px, 3.5vw, 43px)/1.15 Georgia, serif;
+            margin: 0 0 23px
+        }
+
+        .copy p {
+            font: 17px/1.8 Georgia, serif;
+            color: #d5dce8
+        }
+
+        .copy .lead {
+            font-size: 19px;
+            color: #fff
+        }
+
+        .pull {
+            border-left: 3px solid #edbf79;
+            padding: 8px 0 8px 20px;
+            color: #f5d5a1;
+            font: italic 21px/1.5 Georgia, serif;
+            margin-top: 27px
+        }
+
+        .end {
+            padding: 38px 0 60px;
+            text-align: center;
+            border-top: 1px solid #71563b;
+            font: italic clamp(24px, 3vw, 38px)/1.5 Georgia, serif;
+            color: #f1c785
+        }
+
+        .notes {
+            border-top: 1px solid #344357;
+            padding: 30px 0 60px;
+            color: #aebacc;
+            font-size: 13px;
+            line-height: 1.8
+        }
+
+        .tools {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 28px
+        }
+
+        .tools button {
+            padding: 10px 16px;
+            background: #27364a;
+            color: white;
+            border: 1px solid #53617a;
+            border-radius: 7px;
+            cursor: pointer
+        }
+
+        body.light {
+            background: #f8f4ec;
+            color: #242a33
+        }
+
+        body.light .scene {
+            background: #fff;
+            color: #242a33
+        }
+
+        body.light .copy p {
+            color: #343d49
+        }
+
+        body.light .copy .lead {
+            color: #182334
+        }
+
+        body.light .pull {
+            color: #85531e
+        }
+
+        body.light .introline {
+            color: #343d49
+        }
+
+        body.light .notes {
+            color: #515c69
+        }
+
+        @media(max-width:800px) {
+            .hero {
+                padding: 55px 0 40px
+            }
+
+            .scene {
+                grid-template-columns: 1fr
+            }
+
+            .visual {
+                min-height: 0;
+                aspect-ratio: 16/9
+            }
+
+            .visual img {
+                position: absolute
+            }
+
+            .copy {
+                padding: 25px
+            }
+
+            .scene {
+                margin: 24px 0 42px
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black
+            }
+
+            .scene {
+                break-inside: avoid
+            }
+
+            .visual {
+                min-height: 230px
+            }
+
+            .tools {
+                display: none
+            }
+        }
+    </style>
+<style>
+        /* Photographs are separated from labels to prevent overlap. */
+        .scene img {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            object-position: center
+        }
+
+        .scene .photo,
+        .scene figure {
+            overflow: hidden
+        }
+
+        .image-note {
+            font-size: .78rem;
+            opacity: .75;
+            line-height: 1.6
+        }
+    </style>
+</meta><meta content="https://xyang-bit.github.io/When_Two_Fires_Meet_Storyboard/" property="og:url"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="image/jpeg" property="og:image:type"/><meta content="https://xyang-bit.github.io/When_Two_Fires_Meet_Storyboard/preview.jpg" name="twitter:image"/></head>
+<body>
+<header class="hero">
+<div class="wrap">
+<div class="eyebrow">Politics &amp; Culture | A BaZi Visual Story</div>
+<h1>When Two Fires Meet:<br/>AOC, Trump, and the Politics of Power</h1>
+<div class="dek">Two political forces. One ancient Chinese symbolic system. Can the energy that disrupts
+                power also sustain it?</div>
+<div class="meta">10 SCENES  ·  八字 / FOUR PILLARS  ·  CULTURAL COMMENTARY</div>
+<div class="tools"><button onclick="document.body.classList.toggle('light')">Switch reading
+                    theme</button><button onclick="window.print()">Print article</button></div>
+</div>
+</header>
+<main class="wrap">
+<div class="introline">A storm can change the political atmosphere, but governing means understanding the entire
+            weather system.</div>
+<article class="scene" id="scene-01">
+<div class="visual">
+<div aria-hidden="true" class="fallback">Two Fires, One Political Sky</div><img alt="User-selected storyboard image for scene 1: Editorial visual for scene 1: Two Fires, One Political Sky" loading="lazy" onerror="this.style.display='none'" src="images/scene-01.jpg"/>
+</div>
+<div class="copy">
+<div class="num">SCENE 01 / 13</div>
+<div class="kicker">THE OPENING · THE CONFRONTATION</div>
+<h2>Two Fires, One Political Sky</h2>
+<p class="lead">One rose to power by challenging the Republican establishment. The other became a
+                    national figure by defeating an entrenched Democratic incumbent.</p>
+<p>Donald Trump and Alexandria Ocasio-Cortez emerged from different political movements, yet both
+                    demonstrated something that Washington repeatedly underestimates: political outsiders can change the
+                    rules of public debate. Their policy priorities and constituencies differ sharply. But both
+                    understand the power of a message that makes supporters feel the political establishment has stopped
+                    listening. Now imagine these two political forces through the ancient Chinese language of BaZi. Two
+                    fires burning beneath the same American sky.</p>
+<div class="pull">When two fires meet, does the stronger flame win—or does the entire political
+                    landscape change?</div>
+</div>
+</article>
+<article class="scene" id="scene-02">
+<div class="visual">
+<div aria-hidden="true" class="fallback">The Ancient Code: Fire Against Fire</div><img alt="User-selected storyboard image for scene 2: Editorial visual for scene 2: The Ancient Code: Fire Against Fire" loading="lazy" onerror="this.style.display='none'" src="images/scene-02.jpg"/>
+</div>
+<div class="copy">
+<div class="num">SCENE 02 / 13</div>
+<div class="kicker">THE BAZI LENS · 五行</div>
+<h2>The Ancient Code: Fire Against Fire</h2>
+<p class="lead">BaZi, the Four Pillars of Destiny, interprets relationships among heavenly stems,
+                    earthly branches, and the Five Phases: Wood, Fire, Earth, Metal, and Water.</p>
+<p>In one traditional interpretation of Trump’s chart, powerful Fire and Earth create the image of huo
+                    yan tu zao (火炎土燥)—blazing fire and parched earth. In the earlier AOC story, Fire represented her
+                    public urgency and disruptive political energy. But these are literary interpretations, not verified
+                    measurements of either person’s character. Within the symbolic language of BaZi, the question is not
+                    simply whether Fire is strong. It is whether Fire can be balanced, directed, and transformed.</p>
+<div class="pull">Two flames may illuminate the same problem. They may also make the atmosphere too hot
+                    for either side to hear the other.</div>
+</div>
+</article>
+<article class="scene" id="scene-03">
+<div class="visual">
+<div aria-hidden="true" class="fallback">The Battle That Feeds Both Fires</div><img alt="User-selected storyboard image for scene 3: Editorial visual for scene 3: The Battle That Feeds Both Fires" loading="lazy" onerror="this.style.display='none'" src="images/scene-03.jpg"/>
+</div>
+<div class="copy">
+<div class="num">SCENE 03 / 13</div>
+<div class="kicker">THE PARADOX · CONFRONTATION AS FUEL</div>
+<h2>The Battle That Feeds Both Fires</h2>
+<p class="lead">Political confrontation does not always weaken an opponent. Sometimes it strengthens the
+                    very identity a movement was built around.</p>
+<p>Trump’s confrontations with political institutions have repeatedly become central subjects of
+                    national debate. His supporters and critics often interpret those episodes in fundamentally
+                    different ways. AOC has likewise built a public reputation through challenges to established
+                    political priorities, particularly on economic inequality, climate policy, and representation. The
+                    BaZi metaphor offers an image: adding Fire to Fire can increase the heat without changing the
+                    direction of either flame. The deeper political question is whether public attention creates
+                    persuasion—or simply reinforces existing loyalties.</p>
+<div class="pull">A louder argument is not necessarily a larger coalition.</div>
+</div>
+</article>
+<article class="scene" id="scene-04">
+<div class="visual">
+<div aria-hidden="true" class="fallback">The Human Ledger</div><img alt="User-selected storyboard image for scene 4: Editorial visual for scene 4: The Human Ledger" loading="lazy" onerror="this.style.display='none'" src="images/scene-04.jpg"/>
+</div>
+<div class="copy">
+<div class="num">SCENE 04 / 13</div>
+<div class="kicker">THE TURN · FROM SYMBOLS TO EVERYDAY LIFE</div>
+<h2>The Human Ledger</h2>
+<p class="lead">The political debate looks different when viewed from a kitchen table.</p>
+<p>A rent payment. A grocery receipt. A medical bill. The price of gasoline on the way to work. These
+                    costs can connect national decisions to daily life in ways that political slogans cannot. AOC’s
+                    policy agenda has emphasized affordable housing, healthcare, wages, and climate-related investment.
+                    Trump has emphasized economic growth, domestic energy production, tax policy, and immigration
+                    enforcement, among other priorities. The disagreement is not only about which problems deserve
+                    attention. It is about what policies would address them, who would bear their costs, and how their
+                    results should be measured. In BaZi imagery, this is where the flames encounter Earth—the material
+                    world in which consequences must be counted.</p>
+<div class="pull">The most revealing political question may not be who speaks with greater force, but
+                    whose proposals withstand the arithmetic of everyday life.</div>
+</div>
+</article>
+<article class="scene" id="scene-05">
+<div class="visual">
+<div aria-hidden="true" class="fallback">The Outsider Who Broke Through</div><img alt="User-selected storyboard image for scene 5: Editorial visual for scene 5: The Outsider Who Broke Through" loading="lazy" onerror="this.style.display='none'" src="images/scene-05.jpg"/>
+</div>
+<div class="copy">
+<div class="num">SCENE 05 / 13</div>
+<div class="kicker">JUNE 2018 · THE BREAKTHROUGH</div>
+<h2>The Outsider Who Broke Through</h2>
+<p class="lead">In June 2018, AOC defeated Joe Crowley, a powerful Democratic incumbent, in a New York
+                    congressional primary.</p>
+<p>Her campaign relied heavily on volunteers, grassroots organizing, and small donations. It
+                    demonstrated that established political influence could be challenged through a different kind of
+                    organization. In the language of BaZi, this is Fire breaking through a seemingly solid structure.
+                    But the victory also raises a question that every political outsider eventually confronts. Defeating
+                    an incumbent proves that a campaign can win an election. It does not, by itself, establish how
+                    effectively a politician can turn proposals into law.</p>
+<div class="pull">Breaking through the wall is one achievement. Building something beyond it is another.
+                </div>
+</div>
+</article>
+<article class="scene" id="scene-06">
+<div class="visual">
+<div aria-hidden="true" class="fallback">The Price of Refusing to Bend</div><img alt="User-selected storyboard image for scene 6: Editorial visual for scene 6: The Price of Refusing to Bend" loading="lazy" onerror="this.style.display='none'" src="images/scene-06.jpg"/>
+</div>
+<div class="copy">
+<div class="num">SCENE 06 / 13</div>
+<div class="kicker">DECEMBER 2018–JANUARY 2019 · THE INSTITUTIONAL TEST</div>
+<h2>The Price of Refusing to Bend</h2>
+<p class="lead">A dispute over funding for Trump’s proposed border wall helped produce a 35-day partial
+                    federal government shutdown.</p>
+<p>The confrontation involved the White House and Congress, with consequences for federal agencies,
+                    workers, and public services. Supporters and critics disagreed about the merits of Trump’s position.
+                    But the episode demonstrated a basic constitutional reality: a president’s determination cannot
+                    replace the need for enacted appropriations. Through the BaZi lens, it resembles overheated Earth
+                    refusing to yield. Through the lens of American government, it illustrates the costs of unresolved
+                    institutional disagreement.</p>
+<div class="pull">Political strength can sustain a confrontation. It cannot always resolve one.</div>
+</div>
+</article>
+<article class="scene" id="scene-07">
+<div class="visual">
+<div aria-hidden="true" class="fallback">From the Protest Sign to the Policy Desk</div><img alt="User-selected storyboard image for scene 7: Editorial visual for scene 7: From the Protest Sign to the Policy Desk" loading="lazy" onerror="this.style.display='none'" src="images/scene-07.jpg"/>
+</div>
+<div class="copy">
+<div class="num">SCENE 07 / 13</div>
+<div class="kicker">THE GOVERNING TEST · AMBITION MEETS IMPLEMENTATION</div>
+<h2>From the Protest Sign to the Policy Desk</h2>
+<p class="lead">In 2019, AOC helped introduce the Green New Deal resolution, connecting climate action
+                    with employment, infrastructure, and economic security.</p>
+<p>It proposed a broad vision of national mobilization. Supporters viewed its scope as necessary to
+                    confront interconnected challenges; critics questioned its feasibility, costs, and policy
+                    implications. Introducing an ambitious resolution, however, is different from passing, funding, and
+                    implementing a national program. That distinction brings us back to the elemental metaphor. Fire may
+                    represent urgency. Earth represents the structures through which ambition must operate. A proposal
+                    must eventually encounter legislative votes, budgets, administrative capacity, and measurable
+                    results.</p>
+<div class="pull">The question is not whether a vision burns brightly. It is whether institutions can
+                    carry it into practice.</div>
+</div>
+</article>
+<article class="scene" id="scene-08">
+<div class="visual">
+<div aria-hidden="true" class="fallback">The Election That Cannot Be</div><img alt="User-selected storyboard image for scene 8: Editorial visual for scene 8: The Election That Cannot Be" loading="lazy" onerror="this.style.display='none'" src="images/scene-08.jpg"/>
+</div>
+<div class="copy">
+<div class="num">SCENE 08 / 13</div>
+<div class="kicker">2028 · DESTINY MEETS THE CONSTITUTION</div>
+<h2>The Election That Cannot Be</h2>
+<p class="lead">Imagine the dramatic appeal of a presidential contest between AOC and Trump. Two
+                    generations. Two political movements. Two contrasting visions of America’s future.</p>
+<p>It would make a compelling fictional confrontation. But the American Constitution places a decisive
+                    limit on that scenario. Trump has already been elected president twice, and the Twenty-Second
+                    Amendment prohibits a person from being elected president more than twice. This is where the
+                    political story becomes more interesting than the astrological prediction. The two politicians can
+                    still represent competing political ideas and movements without facing one another on a presidential
+                    ballot. BaZi asks what their symbolic elements suggest. The Constitution determines which electoral
+                    possibilities are legally available.</p>
+<div class="pull">Even the most dramatic vision of destiny must confront the rules of the real world.
+                </div>
+</div>
+</article>
+<article class="scene" id="scene-09">
+<div class="visual">
+<div aria-hidden="true" class="fallback">A Storm Is Not a Weather System</div><img alt="User-selected storyboard image for scene 9: Editorial visual for scene 9: A Storm Is Not a Weather System" loading="lazy" onerror="this.style.display='none'" src="images/scene-09.jpg"/>
+</div>
+<div class="copy">
+<div class="num">SCENE 09 / 13</div>
+<div class="kicker">THE TRANSFORMATION · FROM DISRUPTION TO GOVERNANCE</div>
+<h2>A Storm Is Not a Weather System</h2>
+<p class="lead">A storm can transform the atmosphere in minutes. It can break the heat, move enormous
+                    amounts of energy, and force everyone to pay attention.</p>
+<p>But a weather system is more complicated than a storm. It involves pressure, temperature, moisture,
+                    geography, and forces interacting across great distances. Politics is similarly complex. Public
+                    attention, legislative authority, administrative capacity, coalition-building, and public
+                    accountability are related but distinct forms of political influence. Neither AOC’s grassroots
+                    breakthrough nor Trump’s ability to command national attention eliminates those distinctions. In
+                    BaZi’s symbolic vocabulary, the deeper lesson is not that one element must defeat another. It is
+                    that relationships among elements matter.</p>
+<div class="pull">A storm can announce change. A functioning system determines whether that change can
+                    endure.</div>
+</div>
+</article>
+<article class="scene" id="scene-10">
+<div class="visual"><img alt="Illustration for The Year the Earth Turns Against Itself" loading="lazy" src="images/scene-10.jpg"/>
+</div>
+<div class="copy">
+<div class="num">SCENE 10 / 13</div>
+<div class="kicker">2027 BAZI OUTLOOK · 丁未</div>
+<h2>The Year the Earth Turns Against Itself</h2>
+<p>In the traditional Chinese calendar, 2027 is the Ding-Wei (丁未) year. Some BaZi readings associate the
+                    recurring Wei branch with Fu Yin (伏吟), a symbol of repetition, unresolved issues, and circumstances
+                    that seem to return in a new form.</p>
+<p>Another traditional relationship, Xu-Wei (戌未相刑), is sometimes read as friction within established
+                    structures. These interpretations are symbolic, and the proposed birth chart requires independent
+                    verification.</p>
+<p>Imagine an overheated landscape beginning to crack from within. The question for 2027 is not whether
+                    astrology determines events, but which existing political tensions might intensify under new
+                    pressures.</p>
+<div class="pull">What happens when the greatest political pressure comes from within the walls?</div>
+</div>
+</article>
+<article class="scene" id="scene-11">
+<div class="visual"><img alt="Illustration for The President Who Can Say No—but Cannot Govern Alone" loading="lazy" src="images/scene-11.jpg"/>
+</div>
+<div class="copy">
+<div class="num">SCENE 11 / 13</div>
+<div class="kicker">2027 · EXECUTIVE POWER</div>
+<h2>The President Who Can Say No—but Cannot Govern Alone</h2>
+<p>Under divided government, a president can veto legislation and direct executive agencies within the
+                    limits of law. Congress can shape appropriations, conduct oversight, and contest executive
+                    priorities.</p>
+<p>The possible 2027 story is a succession of executive orders, congressional objections, court
+                    challenges, vetoes, and occasional negotiations. This is a scenario, not a forecast of inevitable
+                    paralysis.</p>
+<p>In BaZi imagery, Fire meets a boundary it cannot simply burn away. In constitutional reality,
+                    governing depends on institutions that must sometimes cooperate even while they disagree.</p>
+<div class="pull">Will presidential authority become a bridge to agreements—or a shield against
+                    opposition?</div>
+</div>
+</article>
+<article class="scene" id="scene-12">
+<div class="visual"><img alt="Illustration for The Siege: Investigations, Loyalty, and the Price of Power" loading="lazy" src="images/scene-12.jpg"/>
+</div>
+<div class="copy">
+<div class="num">SCENE 12 / 13</div>
+<div class="kicker">2027 · OVERSIGHT &amp; INSTITUTIONS</div>
+<h2>The Siege: Investigations, Loyalty, and the Price of Power</h2>
+<p>The Xu-Wei image suggests a fortress under pressure. In political terms, the questions are concrete:
+                    Will congressional committees pursue investigations? Will executive actions face legal challenges?
+                    How will officials respond to competing demands?</p>
+<p>Investigations, resignations, and legal disputes are possibilities—not facts established by BaZi. Any
+                    future allegation must be judged by evidence, legal process, and reliable reporting.</p>
+<p>The dramatic tension lies in the separation of powers: a president may challenge Congress and the
+                    courts, but cannot abolish their constitutional roles.</p>
+<div class="pull">An arena of competing powers is not the same as a verdict of destiny.</div>
+</div>
+</article>
+<article class="scene" id="scene-13">
+<div class="visual">
+<div aria-hidden="true" class="fallback">When the Fire Learns the Shape of Water</div><img alt="User-selected storyboard image for scene 10: Editorial visual for scene 10: When the Fire Learns the Shape of Water" loading="lazy" onerror="this.style.display='none'" src="images/scene-13.jpg"/>
+</div>
+<div class="copy">
+<div class="num">SCENE 13 / 13</div>
+<div class="kicker">FINALE · THE UNRESOLVED QUESTION</div>
+<h2>When the Fire Learns the Shape of Water</h2>
+<p class="lead">Imagine two fires on opposite sides of a vast landscape. One has reshaped the political
+                    establishment from within the presidency. The other emerged by challenging an established figure
+                    within her own party.</p>
+<p>Their political agendas differ, and their supporters may see fundamentally different futures for the
+                    country. Yet both stories lead to the same question. What happens after disruption succeeds? In
+                    traditional BaZi imagery, Fire alone does not describe the whole landscape. Earth gives it form.
+                    Water changes its conditions. Other elements contribute their own relationships and tensions. As a
+                    metaphor for politics, the image suggests something more enduring than a contest of personalities.
+                    Movements can generate attention. Elections distribute authority. Institutions establish boundaries.
+                    Public policies produce consequences that citizens can examine and debate. The political future of
+                    either figure cannot be read from a birth chart. But their stories offer an opportunity to examine
+                    the relationship between political energy and governing power.</p>
+<div class="pull">A storm can change the weather. Leadership must understand the entire climate.</div>
+</div>
+</article>
+<div class="end">Two fires may change the sky.<br/>But the future belongs to no single flame.</div>
+</main>
+<footer class="wrap notes"><strong>Editorial note.</strong> BaZi is presented as a traditional Chinese cultural and
+        literary framework, not a scientifically validated predictive system. Symbolic interpretations are not personal
+        diagnoses or verified birth-chart conclusions. Historical and constitutional statements should be checked
+        against primary sources before publication.<p class="image-note">Images supplied by the article creator.
+            Documentary photograph rights and attribution should be verified before public redistribution.</p>
+<p>All 13 supplied illustrations and photographs are embedded in the HTML. Check rights and attribution for
+            documentary photographs before public redistribution.</p>
+</footer>
+</body>
+</html>
